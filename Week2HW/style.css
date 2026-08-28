@@ -1,8 +1,16 @@
 body{
-    background-color: bisque;
+    background-color: rgb(179, 165, 140);
 }
 
 p{
     font-family: cursive;
     text-align: center;
+}
+
+a:link{
+    color:rgb(102, 45, 5);
+}
+
+a:visited{
+    color:maroon;
 }
