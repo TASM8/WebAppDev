@@ -34,7 +34,7 @@ body {
     color: rgb(80, 55, 8);
 }
 
-/* Navigation*/
+/* Navigation */
 
 nav {
     text-align: center;
@@ -60,7 +60,7 @@ nav a:hover {
     color: #d1845c;
 }
 
-/*Headings*/
+/* Headings */
 
 h1 {
     color: rgb(135, 70, 70);
@@ -73,14 +73,14 @@ h2 {
     text-align: center;
 }
 
-/*Home*/
+/* Home */
 
 main {
     max-width: 900px;
     margin: 0 auto;
 }
 
-/*Logo*/
+/* Logo */
 
 .logo {
     display: block;
@@ -96,7 +96,7 @@ main {
     );
 }
 
-/*Welcome*/
+/* Welcome */
 
 .welcome {
     text-align: center;
@@ -129,7 +129,7 @@ main {
     line-height: 1.7;
 }
 
-/*Mission Statement*/
+/* Mission Statement */
 
 .mission {
     text-align: center;
@@ -163,7 +163,7 @@ main {
     font-size: 1.05rem;
 }
 
-/*Contact*/
+/* Contact */
 
 .contact {
     text-align: center;
@@ -203,7 +203,7 @@ main {
     text-decoration: underline;
 }
 
-/*About*/
+/* About */
 
 .intro {
     color: rgb(80, 55, 8);
@@ -216,7 +216,6 @@ main {
 
     line-height: 1.6;
 }
-
 
 /* Team member cards */
 
@@ -247,7 +246,6 @@ main {
         box-shadow 0.3s ease;
 }
 
-
 /* Alternate card direction */
 
 .person:nth-of-type(even) {
@@ -255,7 +253,6 @@ main {
 
     border-color: #9b6b6b;
 }
-
 
 /* Team member pictures */
 
@@ -279,7 +276,6 @@ main {
         transform 0.3s ease;
 }
 
-
 /* Team card hover */
 
 .person:hover {
@@ -293,7 +289,6 @@ main {
     transform: rotate(3deg) scale(1.05);
 }
 
-
 /* Team member text */
 
 .person p {
@@ -305,7 +300,6 @@ main {
 
     line-height: 1.7;
 }
-
 
 /* Team member names */
 
@@ -319,14 +313,13 @@ main {
     margin-bottom: 10px;
 }
 
-/*Resources*/
+/* Resources */
 
 .resources {
     max-width: 900px;
 
     margin: 0 auto;
 }
-
 
 /* Resource introduction */
 
@@ -343,7 +336,6 @@ main {
 
     font-size: 1.05rem;
 }
-
 
 /* Resource cards */
 
@@ -366,7 +358,6 @@ main {
         box-shadow 0.3s ease;
 }
 
-
 /* Alternate card colors */
 
 .resource-card:nth-of-type(odd) {
@@ -377,7 +368,6 @@ main {
     border-color: #9b6b6b;
 }
 
-
 /* Resource card hover */
 
 .resource-card:hover {
@@ -386,7 +376,6 @@ main {
     box-shadow:
         0 10px 22px rgba(80, 55, 8, 0.2);
 }
-
 
 /* Organization names */
 
@@ -408,7 +397,6 @@ main {
     color: #d1845c;
 }
 
-
 /* Resource descriptions */
 
 .resource-card p {
@@ -417,21 +405,14 @@ main {
     line-height: 1.7;
 }
 
+/* Guidelines List */
 
-/*Guidelines*/
+.guideline-list {
+    max-width: 750px;
 
-.guidelines {
-    max-width: 1000px;
-    margin: 0 auto;
+    margin: 40px auto;
 
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-
-}
-
-.guideline-card {
-    padding: 25px;
+    padding: 25px 40px;
 
     background-color: #ffffff;
 
@@ -439,37 +420,81 @@ main {
 
     border-radius: 25px;
 
-    box-shadow: 0 6px 15px rgba(80, 55, 8, 0.15);
-}
+    box-shadow:
+        0 6px 15px rgba(80, 55, 8, 0.15);
 
-
-.guideline-card h2 {
-    margin-top: 0;
-    margin-bottom: 20px;
-
-    color: rgb(135, 70, 70);
-
-    text-align: center;
-
-}
-
-.guideline-card .answers {
     color: rgb(80, 55, 8);
 
-    line-height: 1.7;
+    line-height: 1.8;
 
     text-align: center;
 
+    list-style-position: inside;
 }
 
-.guideline-card .extra.important {
-    color: rgb(135, 70, 70);
+.guideline-list li {
+    margin-bottom: 10px;
 
-    font-weight: 900;
+    text-align: center;
+}
+
+.guideline-list li:last-child {
+    margin-bottom: 0;
+}
+
+/* Guidelines Table */
+
+.guidelines-table {
+    width: 90%;
+
+    max-width: 900px;
+
+    margin: 40px auto;
+
+    border-collapse: collapse;
+
+    background-color: #ffffff;
+
+    border: 3px solid #d6a36a;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 6px 15px rgba(135, 70, 70, 0.15);
+
+    color: rgb(80, 55, 8);
+}
+
+.guidelines-table th {
+    background-color: rgb(135, 70, 70);
+
+    color: #fff5d7;
+
+    padding: 15px;
 
     text-align: center;
 
-    margin-top: 20px;
+    font-size: 1.1rem;
+}
+
+.guidelines-table td {
+    padding: 15px;
+
+    text-align: center;
+
+    line-height: 1.6;
+
+    border-top: 1px solid #d6a36a;
+}
+
+.guidelines-table tr:nth-child(even) {
+    background-color: #fff8ed;
+}
+
+.guidelines-table tr:hover {
+    background-color: #f3e3d1;
 }
 
 /* Visit buttons */
@@ -506,7 +531,29 @@ main {
     transform: scale(1.05);
 }
 
-/*Footer*/
+/* Core Values */
+
+.core-values {
+    text-align: center;
+}
+
+.core-values h2 {
+    text-align: center;
+}
+
+.core-values ul {
+    display: inline-block;
+
+    text-align: left;
+
+    margin: 0 auto;
+
+    padding-left: 40px;
+
+    line-height: 1.8;
+}
+
+/* Footer */
 
 footer {
     text-align: center;
@@ -522,7 +569,7 @@ footer {
     border-top: 2px solid #d6a36a;
 }
 
-/*Phone App*/
+/* Phone App */
 
 @media (max-width: 600px) {
 
@@ -530,8 +577,7 @@ footer {
         padding: 10px;
     }
 
-
-    /* Navigation */
+    /* Phone Navigation */
 
     nav a {
         display: inline-block;
@@ -539,15 +585,13 @@ footer {
         margin: 5px 8px;
     }
 
-
-    /* Home logo */
+    /* Phone Home Logo */
 
     .logo {
         width: 75%;
     }
 
-
-    /* Home sections */
+    /* Phone Home Sections */
 
     .welcome,
     .mission,
@@ -559,8 +603,7 @@ footer {
         padding: 20px;
     }
 
-
-    /* Team cards */
+    /* Phone Team Cards */
 
     .person,
     .person:nth-of-type(even) {
@@ -579,8 +622,7 @@ footer {
         text-align: center;
     }
 
-
-    /* Resource cards */
+    /* Phone Resource Cards */
 
     .resources {
         padding: 0 10px;
@@ -588,6 +630,25 @@ footer {
 
     .resource-card {
         padding: 20px;
+    }
+
+    /* Phone Guidelines List */
+
+    .guideline-list {
+        padding: 20px 30px;
+    }
+
+    /* Phone Guidelines Table */
+
+    .guidelines-table {
+        width: 100%;
+
+        font-size: 0.9rem;
+    }
+
+    .guidelines-table th,
+    .guidelines-table td {
+        padding: 10px;
     }
 
 }
