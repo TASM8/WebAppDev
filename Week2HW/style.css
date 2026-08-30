@@ -420,33 +420,17 @@ main {
 
 /*Guidelines*/
 
-.statement {
-    text-align: center;
+.guidelines {
+    max-width: 1000px;
+    margin: 0 auto;
 
-    max-width: 750px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
 
-    margin: 30px auto 45px;
-
-    padding: 25px;
-
-    background-color: #ffffff;
-
-    border: 3px solid #d6a36a;
-
-    border-radius: 25px;
-
-    box-shadow: 0 6px 15px rgba(80, 55, 8, 0.15);
-
-    font-weight: bold;
 }
 
-.answers {
-    text-align: center;
-
-    max-width: 750px;
-
-    margin: 30px auto 45px;
-
+.guideline-card {
     padding: 25px;
 
     background-color: #ffffff;
@@ -458,24 +442,34 @@ main {
     box-shadow: 0 6px 15px rgba(80, 55, 8, 0.15);
 }
 
-.extra.important {
+
+.guideline-card h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    color: rgb(135, 70, 70);
+
     text-align: center;
 
-    max-width: 750px;
+}
 
-    margin: 30px auto 45px;
+.guideline-card .answers {
+    color: rgb(80, 55, 8);
 
-    padding: 25px;
+    line-height: 1.7;
 
-    background-color: #ffffff;
+    text-align: center;
 
-    border: 3px solid #d6a36a;
+}
 
-    border-radius: 25px;
-
-    box-shadow: 0 6px 15px rgba(80, 55, 8, 0.15);
+.guideline-card .extra.important {
+    color: rgb(135, 70, 70);
 
     font-weight: 900;
+
+    text-align: center;
+
+    margin-top: 20px;
 }
 
 /* Visit buttons */
