@@ -1,0 +1,94 @@
+body{
+    background-color: bisque;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+h1 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+p{
+    color:rgb(66, 4, 4);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+
+
+}
+
+img {
+
+    display: block;
+   
+    width: auto;
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+    margin-top: 10px;
+
+    border-radius: 50%;
+}
+
+
+header{
+    text-align: center;
+}
+
+
+table {
+
+
+    margin-left: auto;
+
+    margin-right: auto;
+}
+
+
+nav{
+
+    text-align: center;
+
+}
+
+main {
+
+    text-align: center;
+}
+
+p {
+    margin: 40px;
+
+    padding: 10px;
+
+    border: 2px solid rgb(78, 39, 2) ; 
+}
+
+
+a:link {
+    color: rgb(58, 28, 1);
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color:white;
+
+    text-decoration: wavy;
+
+    text-shadow: 10cm;
+
+    font-size: xx-large;
+}
+
+a:active {
+    color: rgb(124, 59, 6);
+
+}
+
+footer {
+    text-align: center;
+}
