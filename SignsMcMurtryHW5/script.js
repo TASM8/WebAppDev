@@ -2,11 +2,14 @@
     console.log("This is going to appear on my console");
    
     let name="Galaxy Quest"; //string text
-    let year="1999"; //number/integer
-    const isMovie=true; //bolean
+    let year=1999 //number/integer
+    const isMovie=true; //boolean
     console.log(name, year, isMovie);
 
     let age="How many years ago did it come out?";
+
+    let totalMinutes = 18 * 102; //added this to do the math equation. 
+
     console.log(age)
 
     console.log(2026-1999);
@@ -33,8 +36,9 @@
     let eighth="I have watched it at least once a year for the past 18, and the movie is 102 minutes, so the amount of hours I have spent watching this movie is";
     console.log(eighth);
 
-    console.log(18*102);
+    console.log(totalMinutes);
 
     let nineth="That is also just the minimum I have watched it much more than that."
     console.log(nineth);
     
+    document.body.innerHTML += "<p>Result: " + totalMinutes + "</p>"; //Executes the math problem.
