@@ -12,7 +12,7 @@
 
     console.log(age)
 
-    console.log(2026-1999);
+    console.log(2026-1999); //wanted to see how old the movie is. 
 
     
 
@@ -36,9 +36,9 @@
     let eighth="I have watched it at least once a year for the past 18, and the movie is 102 minutes, so the amount of hours I have spent watching this movie is";
     console.log(eighth);
 
-    console.log(totalMinutes);
+    console.log(totalMinutes); //code to bring the total together.
 
     let nineth="That is also just the minimum I have watched it much more than that."
     console.log(nineth);
     
-    document.body.innerHTML += "<p>Result: " + totalMinutes + "</p>"; //Executes the math problem.
+    document.body.innerHTML += "<p>Result: " + totalMinutes + "</p>"; //executes the math problem. In other words it will take the result variable and display it on the webpage. 
