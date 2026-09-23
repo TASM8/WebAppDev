@@ -38,7 +38,7 @@
 
     console.log(totalMinutes); //code to bring the total together.
 
-    let nineth="That is also just the minimum I have watched it much more than that."
+    let ninth="That is also just the minimum I have watched it much more than that."
     console.log(nineth);
     
     document.body.innerHTML += "<p>Result: " + totalMinutes + "</p>"; //executes the math problem. In other words it will take the result variable and display it on the webpage. 
