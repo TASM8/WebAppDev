@@ -4,7 +4,7 @@
     let name="Galaxy Quest"; //string text
     let year=1999 //number/integer
     const isMovie=true; //boolean
-    console.log(name, year, isMovie);
+   
 
     let age="How many years ago did it come out?";
 
