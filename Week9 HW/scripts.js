@@ -18,8 +18,8 @@ function check(number) {
 }
 
 //Creates a loop and calls another function
-function table(number) {
-    for (let i = 1; i <= 5; i++) {
+function table(number, length) {
+    for (let i = 1; i <= length; i++) {
         console.log(number + " x " + i + " = " + number * i);
         console.log(check(number * i)); //Nested function
     }
@@ -38,4 +38,4 @@ let answer = add(first, second);
 console.log("The total is: " + answer);
 
 //Prints out the final input
-table(chosen);
+table(chosen, 5);
