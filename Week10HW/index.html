@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DnD - DOM Homework</title>
+    <title>D&D Adventure Guide — DOM Homework</title>
     <style>
         .highlightclass{
             background: #fff3cd; transition:background 200ms;}
@@ -12,25 +12,61 @@
     </style>
 </head>
 <body>
+    
+    <!-- Page heading -->
     <header>
-        <h1 id="title">Dungeons and Dragons 101 Page</h1>
+        <h1 id="adventureTitle">D&D Adventure Guide</h1>
+        <p>Choose your quest. Shape your legend.</p>
     </header>
-    <main id="">
-    <p class="">Welcome! This page will update with JavaScript.</p>
 
-    <!-- List target you will render into -->
-    <ul id=""></ul>
+    <!-- Main content -->
+    <main id="adventureMain">
 
-    <!-- Image you will update -->
-    <img id="" src="" alt="" />
+        <p class="adventureIntro">
+            Welcome, adventurer! Explore the quests waiting for you.
+        </p>
 
-    <!-- Buttons you will wire up -->
-    <button id="">Toggle Highlight</button>
-    <button id="">Swap Image</button>
-  </main>
+        <h2>Available Quests</h2>
 
-  <footer id="">© 2026 Taylor Signs-McMurtry</footer>
+        <!-- JavaScript list here -->
+        <ul id="questList"></ul>
 
-  <script src="scripts.js"></script>
+        <h2>Your Adventure Awaits</h2>
+
+        <!-- JavaScript will change image -->
+        <img
+            id="adventureImage"
+            src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1000&q=80"
+            alt="A mysterious forest waiting to be explored"
+        >
+
+        <!-- Buttons for interacting with the page -->
+        <button id="highlightButton" class="adventure-button">
+            Toggle Quest Highlight
+        </button>
+
+        <button id="imageButton" class="adventure-button">
+            Change Adventure Image
+        </button>
+
+        <button id="darkModeButton" class="adventure-button">
+            Toggle Night Mode
+        </button>
+
+        <!-- Message -->
+        <p id="adventurerMessage">
+            Your adventure is about to begin!
+        </p>
+
+    </main>
+
+    <!-- Page footer -->
+    <footer id="Footer">
+        <p>© 2026 Taylor Signs-McMurtry</p>
+    </footer>
+
+    <!-- Connect the JavaScript file -->
+    <script src="scripts.js"></script>
+
 </body>
 </html>
