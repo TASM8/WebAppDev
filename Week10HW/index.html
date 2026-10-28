@@ -3,34 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DnD - DOM Homework</title>
+    <title>D&D Adventure Guide — DOM Homework</title>
+   
     <style>
-        .highlightclass{
-            background: #fff3cd; transition:background 200ms;}
-        
-        .darkclass {background:#111;color:#eee}
+         body {
+            font-family: Georgia, serif;
+            background-color: #f4efe5;
+            color: #29251f;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        header, main, footer {
+            max-width: 850px;
+            margin: 20px auto;
+        }
+
+        header {
+            text-align: center;
+            background-color: #382d24;
+            color: #f5dfaa;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        main {
+            background-color: #fffdf7;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #714b26;
+        }
+
+        /* List style */
+        #questList {
+            padding-left: 25px;
+        }
+
+        .quest-item {
+            background-color: #f1e5d0;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 6px;
+        }
+
+        /* Highlight */
+        .quest-highlight {
+            background-color: #ffe3a3;
+            transition: background-color 200ms;
+        }
+
+        /* Optional dark mode */
+        .night-mode {
+            background-color: #211f2b;
+            color: #f5f0e8;
+        }
+
+        /* Adv. Image styling */
+        #adventureImage {
+            display: block;
+            width: 100%;
+            max-height: 350px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        /* Button styling */
+        .adventure-button {
+            background-color: #714b26;
+            color: white;
+            padding: 10px 16px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: inherit;
+        }
+
+        .adventure-button:hover {
+            background-color: #503319;
+        }
+
+        footer {
+            text-align: center;
+        }
     </style>
 </head>
 <body>
+    
+    <!-- Page heading -->
     <header>
-        <h1 id="title">Dungeons and Dragons 101 Page</h1>
+        <h1 id="adventureTitle">D&D Adventure Guide</h1>
+        <p>Choose your quest. Shape your legend.</p>
     </header>
-    <main id="">
-    <p class="">Welcome! This page will update with JavaScript.</p>
 
-    <!-- List target you will render into -->
-    <ul id=""></ul>
+    <!-- Main content -->
+    <main id="adventureMain">
 
-    <!-- Image you will update -->
-    <img id="" src="" alt="" />
+        <p class="adventureIntro">
+            Welcome, adventurer! Explore the quests waiting for you.
+        </p>
 
-    <!-- Buttons you will wire up -->
-    <button id="">Toggle Highlight</button>
-    <button id="">Swap Image</button>
-  </main>
+        <h2>Available Quests</h2>
 
-  <footer id="">© 2026 Taylor Signs-McMurtry</footer>
+        <!-- JavaScript list here -->
+        <ul id="questList"></ul>
 
-  <script src="scripts.js"></script>
+        <h2>Your Adventure Awaits</h2>
+
+        <!-- JavaScript will change image -->
+        <img
+            id="adventureImage"
+            src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1000&q=80"
+            alt="A mysterious forest waiting to be explored"
+        >
+
+        <!-- Buttons for interacting with the page -->
+        <button id="highlightButton" class="adventure-button">
+            Toggle Quest Highlight
+        </button>
+
+        <button id="imageButton" class="adventure-button">
+            Change Adventure Image
+        </button>
+
+        <button id="darkModeButton" class="adventure-button">
+            Toggle Night Mode
+        </button>
+
+        <!-- Message -->
+        <p id="adventurerMessage">
+            Your adventure is about to begin!
+        </p>
+
+    </main>
+
+    <!-- Page footer -->
+    <footer id="Footer">
+        <p>© 2026 Taylor Signs-McMurtry</p>
+    </footer>
+
+    <!-- Connect JavaScript file -->
+    <script src="scripts.js"></script>
+
 </body>
 </html>

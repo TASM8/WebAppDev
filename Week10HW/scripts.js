@@ -1,54 +1,112 @@
 // Check to see if properly linked: make sure file is linked
 console.log("DOM HW loaded");
 
-// 1) Grab your title and main section
-const titleEl = document.getElementById("");
-const mainEl = document.getElementById("");
-// 2) Update the title text
-titleEl.textContent = " — Powered by JavaScript";
-// WHY: textContent replaces the visible text inside the element safely.
+// Select the page elements that JavaScript will update
+const titleEl = document.getElementById("adventureTitle");
+const mainEl = document.getElementById("adventureMain");
+const listEl = document.getElementById("questList");
+const imageEl = document.getElementById("adventureImage");
 
-const imgEl = document.getElementById("");
-// Swap to a new image and alt text (use any public image URL)
-imgEl.src = "";
-imgEl.alt = "";
-// WHY: Changing attributes lets you swap content without editing HTML.
+// Select the first matching intro paragraph
+const introEl = document.querySelector(".adventureIntro");
 
-// Example data structure — use your own keys/values
-const items = [
-{ name: "", info: "" },
-{ name: "", info: "" },
-{ name: "", info: "" }
+// Select all adventure buttons
+const buttons = document.querySelectorAll(".adventure-button");
+
+// Set the type on each button
+buttons.forEach((button) => {
+    button.setAttribute("type", "button");
+});
+
+// Update the title and intro
+titleEl.textContent = "D&D Adventure Guide — Powered by JavaScript";
+introEl.textContent =
+    "Greetings, adventurer! Your next legendary quest awaits.";
+
+// Quests options
+const quests = [
+    {
+        name: "The Dragon's Hoard",
+        info: "Travel to the mountains and uncover a legendary treasure."
+    },
+    {
+        name: "The Lost Spellbook",
+        info: "Search an ancient library for a wizard's missing spellbook."
+    },
+    {
+        name: "The Cursed Forest",
+        info: "Investigate a mysterious curse affecting a nearby village."
+    },
+    {
+        name: "The Goblin King's Challenge",
+        info: "Negotiate with a goblin king to restore peace."
+    },
+    {
+        name: "The Forgotten Dungeon",
+        info: "Explore a hidden dungeon filled with secrets and puzzles."
+    }
 ];
-// Target the list you created in HTML
-const listEl = document.getElementById("");
-listEl.innerHTML = ""; // clear existing
-// Create and append list items from your data
-items.forEach((obj) => {
-const li = document.createElement("li");
-li.textContent = `${obj.name} — ${obj.info}`;
-listEl.appendChild(li);
-});
-// WHY: createElement + appendChild builds real nodes (safer than string HTML).
 
-const toggleBtn = document.getElementById("");
-// Toggle on the <main> or on document.body — your choice
-toggleBtn.addEventListener("click", () => {
-mainEl.classList.toggle("");
-});
-// WHY: classList.toggle adds the class if missing, removes if present.
-// This keeps style logic in CSS, behavior in JS (good separation).
+// Randomize list
+listEl.innerHTML = "";
 
-const swapBtn = document.getElementById("");
-let swapped = false;
-swapBtn.addEventListener("click", () => {
-if (!swapped) {
-imgEl.src = "";
-imgEl.alt = "";
-swapped = true; } else {
-imgEl.src = "";
-imgEl.alt = "";
-swapped = false;
-}
+quests.forEach((quest) => {
+    const listItem = document.createElement("li");
+
+    listItem.classList.add("quest-item");
+    listItem.textContent = `${quest.name} — ${quest.info}`;
+
+    listEl.appendChild(listItem);
 });
-// WHY: This shows conditional logic + DOM attribute updates on a user action.
+
+// Highlight toggle
+const highlightButton = document.getElementById("highlightButton");
+
+// Click and remove
+highlightButton.addEventListener("click", () => {
+    mainEl.classList.toggle("quest-highlight");
+});
+
+// Button changes the adventure image
+const imageButton = document.getElementById("imageButton");
+
+// Keeps track of pictures
+let imageChanged = false;
+
+// Changes pictures
+imageButton.addEventListener("click", () => {
+    if (imageChanged === false) {
+        imageEl.src =
+            "https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1000&q=80";
+
+        imageEl.alt = "A peaceful forest surrounded by trees";
+
+        imageChanged = true;
+    } else {
+        imageEl.src =
+            "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1000&q=80";
+
+        imageEl.alt = "A mysterious forest waiting to be explored";
+
+        imageChanged = false;
+    }
+});
+
+// Night mode
+const darkModeButton = document.getElementById("darkModeButton");
+
+// Night mode main
+darkModeButton.addEventListener("click", () => {
+    mainEl.classList.toggle("night-mode");
+});
+
+// DOM
+const messageEl = document.getElementById("adventurerMessage");
+
+// Change the text and color using JavaScript
+messageEl.textContent =
+    "Brave adventurer, your story begins here!";
+
+messageEl.style.color = "#8b4513";
+
+console.log("Adventure quests have been added to the page.");
