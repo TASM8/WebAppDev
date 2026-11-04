@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+    <h1>Form</h1>
+
+    //Added the element to the page for user to input.
+    <form id="form">
+        <label for="name">Name:</label>
+        <input id="name" type="text" placeholder="Enter your name: ">
+        <br>
+        <label for="email">Email:</label>
+        <input id="email" type="email" placeholder="example@email.com">
+        <br>
+        <label for="age">Age:</label>
+        <input id="age" type="number" min="0" max="105"/>
+        <br>
+        <label for="message">Message:</label> 
+        <textarea id="message" rows="4" cols="50" placeholder="Enter your message here: "></textarea>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+
+    //Gives the result of the data entered.
+    <section id="result">
+        <h2>Results</h2>
+        <p id="nameResult"></p>
+        <p id="emailResult"></p>
+        <p id="messageResult"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
