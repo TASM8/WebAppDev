@@ -3,10 +3,10 @@ body {
     background: beige;
     color: rgb(158, 154, 154) ;
     padding: 1rem;
-}
+} /*The color of background website*/
 
 /*The 'Dark' theme will toggle later*/
 body.dark {
     background-color: #222;
     color: aqua;
-}
+} /*Makes it neon!*/
