@@ -1,0 +1,110 @@
+/* body {
+    background-color: blanchedalmond;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 40px;
+}
+
+h1 {
+    color: saddlebrown;
+}
+
+form {
+    background-color: white;
+    padding: 25px;
+    max-width: 500px;
+    width: 100px;
+    box-sizing: border-box;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+input, textarea {
+    padding: 8px;
+    margin: 10px;
+    border: 1px solid burlywood;
+    border-radius: 5px;
+    font-family: inherit;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+}
+
+button {
+    background-color: saddlebrown;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+button:hover {
+    background-color: sienna;
+}
+
+#result {
+    margin: 20px;
+    max-width: 500px;
+    width: 100%;
+} */
+
+
+body {
+    background-color: blanchedalmond;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+h1 {
+    color: saddlebrown;
+}
+
+form {
+    background-color: white;
+    padding: 25px;
+    max-width: 500px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+input, textarea {
+    padding: 8px;
+    margin: 10px;
+    border: 1px solid burlywood;
+    border-radius: 5px;
+    font-family: inherit;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+}
+
+button {
+    background-color: saddlebrown;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+button:hover {
+    background-color: sienna;
+}
+
+#result {
+    margin: 20px auto;
+    max-width: 500px;
+    width: 100%;
+}
