@@ -1,8 +1,9 @@
 const form = document.getElementById("form");
 const result = document.getElementById("result");
 
+// Prevent the default form submission behavior
 form.addEventListener("submit", (event) => {
-    event.preventDefault(); // Prevent the default form submission behavior
+    event.preventDefault(); 
 
     //Displays everything that the user inputs into the form on the front side of the website
     const name = document.getElementById("name").value;
@@ -37,6 +38,8 @@ form.addEventListener("submit", (event) => {
 });
 
      
+//I tried to use this code but something about it was not working.
+
 
 //     //Displays the result of the submission
 //     result.innerHTML = `
