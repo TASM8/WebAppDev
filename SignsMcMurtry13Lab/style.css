@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 40px;
+    background-color: blanchedalmond;
+}
+
+h1 {
+    color: antiquewhite;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+    max-width: 400px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #deb883;
+
+}
+
+button:hover {
+    background-color: #deb883;
+}
+
+.error {
+    color: red;
+    margin: 0;
+}
+
+.success {
+    color: green;
+    font-weight: bold;
+}

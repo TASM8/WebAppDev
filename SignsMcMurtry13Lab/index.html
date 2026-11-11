@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 13 - Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--Added a style.css because it gets cluttered putting it all into the index-->
+
+    <h1>Contact Form</h1>
+
+    <form id="form" novalidate>
+
+    <!--Create Form-->
+
+
+        <!--Name Data-->
+        <label for="username">Username:</label>
+        <input type="text" id="username" 
+            placeholder="Enter your username" required>
+        <p id="usernameError" class="error"></p>
+        <br>
+
+        <!--Email Data-->
+        <label for="email">Email:</label>
+        <input type="email" id="email" 
+            placeholder="Enter your email" required>
+        <p id="emailError" class="error"></p>
+        <br>
+
+        <!--Age Data-->
+        <label for="age">Age:</label>
+        <input type="number" id="age" min="18"
+            placeholder="Enter your email" required/>
+        <p id="ageError" class="error"></p>
+
+        <!--Phone Data-->
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone"
+            placeholder="555-123-4567"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            required>
+        <p id="phoneError" class="error"></p>
+        </select>
+        <br>
+        
+        <!--Submission Button-->
+        <button type="submit">Submit</button>
+    </form>
+
+    <!--Success Message to User-->
+    <p id="successMessage" class="success"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
