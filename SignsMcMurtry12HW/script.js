@@ -9,6 +9,7 @@ form.addEventListener("submit", (event) => {
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
     const age = document.getElementById("age").value;
+    const interest = document.getElementById("interest").value;
     const message = document.getElementById("message").value;
 
     //Clearing the previous info entered
@@ -19,7 +20,8 @@ form.addEventListener("submit", (event) => {
     heading.textContent="Form Submission Result: ";
     result.appendChild(heading);
 
-    //Shows user's info
+    //Shows user's info, I know that we don't need to add + name etc. 
+    // It wasn't working, and the predictive vscode suggested it.
     const nameResult=document.createElement("p");
     nameResult.textContent="Name: " + name;
     result.appendChild(nameResult);
@@ -32,7 +34,11 @@ form.addEventListener("submit", (event) => {
     ageResult.textContent = "Age: " + age;
     result.appendChild(ageResult);
 
-        const messageResult = document.createElement("p");
+    const interestResult = document.createElement("p");
+    interestResult.textContent = "Volunteer Interest: " + interest;
+    result.appendChild(interestResult);
+
+    const messageResult = document.createElement("p");
     messageResult.textContent = "Message: " + message;
     result.appendChild(messageResult);
 });

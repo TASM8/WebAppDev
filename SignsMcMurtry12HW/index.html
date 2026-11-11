@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Volunteer Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,6 +20,14 @@
 
         <label for="age">Age:</label>
         <input id="age" type="number" min="0" max="105"/>
+
+        <label for="interest">Volunteer Desire:</label>
+        <select id="interest">
+            <option value="Food Bank">Queer Food Bank</option>
+            <option value="Animal Shelter">Animal Shelter</option>
+            <option value="Senior Center">Senior Center</option>
+            <option value="At-Risk Youth">At-Risk Youth</option>
+        </select>
         <br>
 
         <label for="message">Message:</label> 
@@ -34,6 +42,7 @@
         <p id="nameResult"></p>
         <p id="emailResult"></p>
         <p id="ageResult"></p>
+        <p id="interestResult"></p>
         <p id="messageResult"></p>
     </section>
 

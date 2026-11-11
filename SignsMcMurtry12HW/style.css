@@ -75,7 +75,7 @@ form {
     border-radius: 10px;
 }
 
-input, textarea {
+input, textarea, select {
     padding: 8px;
     margin: 10px;
     border: 1px solid burlywood;
